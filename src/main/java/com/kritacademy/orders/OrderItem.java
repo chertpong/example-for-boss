@@ -22,8 +22,8 @@ public class OrderItem {
     @ManyToOne
     private Order order;
 
-    @OneToMany
-    private Set<Product> products = new HashSet<>();
+    @OneToOne
+    private Product product;
 
     private Integer amount;
 }
